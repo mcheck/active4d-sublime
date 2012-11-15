@@ -1,0 +1,8 @@
+<snippet>
+	<description>RowSet ..</description>
+	<content><![CDATA[<RowSet name="\$${1:query}">
+	$0
+</RowSet>]]></content>
+	<tabTrigger>rs</tabTrigger>
+	<scope>source.active4d text.xml</scope>
+</snippet>

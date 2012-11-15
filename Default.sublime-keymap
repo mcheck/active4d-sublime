@@ -1,0 +1,13 @@
+[
+    { "keys": ["super+shift+="], "command": "insert_snippet", "args": { "name": "Packages/Active4D/Snippets/equal-write.sublime-snippet" }, "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "text.html.strict.active4d - source.active4d", "match_all": true }
+        ]
+    },
+
+    { "keys": ["super+alt+b"], "command": "build_query", "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.active4d", "match_all": true }
+        ]
+    }
+]

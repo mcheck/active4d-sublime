@@ -1,0 +1,7 @@
+[
+    {
+        "caption": "Active4D: New Circuit",
+        "command": "new_circuit",
+        "args": {}
+    }
+]
