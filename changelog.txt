@@ -1,0 +1,4 @@
+Active4D 1.0.0 change log
+=========================
+
+Initial release.

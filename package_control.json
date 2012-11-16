@@ -1,0 +1,20 @@
+{
+    "schema_version": "1.1",
+    "packages": [
+        {
+            "name": "Active4D",
+            "description": "Language support for Active4D",
+            "author": "Aparajita Fishman",
+            "homepage": "http://github.com/aparajita/active4d-sublime",
+            "last_modified": "2012-11-16 08:27:31",
+            "platforms": {
+                "*": [
+                    {
+                        "version": "1.0.0",
+                        "url": "https://nodeload.github.com/aparajita/active4d-sublime/zipball/v1.0.0"
+                    }
+                ]
+            }
+        }
+    ]
+}

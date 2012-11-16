@@ -1,7 +1,7 @@
 Active4D-Sublime
 ================
 
-Active4D-Sublime is a package which provides syntax highlighting, snippets and convenience commands for use with Active4D.
+Active4D-Sublime is a Sublime Text 2 package which provides syntax highlighting, snippets and convenience commands for use with Active4D.
 
 ## Syntax Highlighting
 Full syntax highlighting is provided for the following file types:

@@ -1,0 +1,35 @@
+[
+    {
+        "caption": "Preferences",
+        "mnemonic": "n",
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "Active4D",
+                        "children":
+                        [
+                            {
+                                "command": "open_file",
+                                "args": {"file": "${packages}/Active4D/messages/install.txt"},
+                                "caption": "README"
+                            },
+                            {
+                                "command": "open_file",
+                                "args": {"file": "${packages}/Active4D/changelog.txt"},
+                                "caption": "Change Log"
+                            },
+                            { "caption": "-" }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
