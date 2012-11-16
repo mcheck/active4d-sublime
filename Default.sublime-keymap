@@ -9,5 +9,11 @@
         [
             { "key": "selector", "operator": "equal", "operand": "source.active4d", "match_all": true }
         ]
+    },
+
+    { "keys": ["super+k", "super+i"], "command": "open_include", "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.active4d", "match_all": true }
+        ]
     }
 ]

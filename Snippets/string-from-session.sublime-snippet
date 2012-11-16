@@ -1,5 +1,5 @@
 <snippet>
-	<description>string from session</description>
+	<description>fusedoc: string from session</description>
 	<content><![CDATA[<string name="${1:name}" scope="session" $2/>]]></content>
 	<tabTrigger>ss</tabTrigger>
 	<scope>source.active4d text.xml</scope>

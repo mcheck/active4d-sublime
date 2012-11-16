@@ -1,5 +1,5 @@
 <snippet>
-	<description>XFA</description>
+	<description>fusedoc: XFA</description>
 	<content><![CDATA[<string name="\$XFA_$1" $2/>]]></content>
 	<tabTrigger>xfa</tabTrigger>
 	<scope>source.active4d text.xml</scope>

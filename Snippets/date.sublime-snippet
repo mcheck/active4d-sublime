@@ -1,5 +1,5 @@
 <snippet>
-	<description>date ..</description>
+	<description>fusedoc: date ..</description>
 	<content><![CDATA[<date name="${1:name}" $2/>]]></content>
 	<tabTrigger>date</tabTrigger>
 	<scope>source.active4d text.xml</scope>

@@ -1,5 +1,5 @@
 <snippet>
-	<description>string from form field</description>
+	<description>fusedoc: string from form field</description>
 	<content><![CDATA[<string name="${1:name}" scope="attributes" optional="${2:yes}"${3: comments="$4"} />]]></content>
 	<tabTrigger>ff</tabTrigger>
 	<scope>source.active4d text.xml</scope>

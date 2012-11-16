@@ -64,3 +64,43 @@ class BuildQueryCommand(sublime_plugin.TextCommand):
             self.view.replace(edit, line_region, line)
             self.view.end_edit(edit)
             self.view.run_command('insert_snippet', {'contents': '%s%s([${1:%s}]; ${2:conjunction}; [$1]${3:field})' % (ws, command, table)})
+
+
+class OpenIncludeCommand(sublime_plugin.TextCommand):
+    QUOTE_RE = re.compile(ur'[\'"]')
+
+    def is_enabled(self):
+        return usingActive4DSyntax(self.view)
+
+    def run(self, edit):
+        sel_region = self.view.sel()[0]
+        line_region = self.view.line(sel_region)
+        line = self.view.substr(line_region)
+        col = self.view.rowcol(sel_region.begin())[1]
+
+        # Search backward until we find a quote or line start
+        first = col - 1
+
+        for first in range(first, -1, -1):
+            print line[first]
+            if self.QUOTE_RE.match(line[first]):
+                # The start should be one past the first nonvalid character
+                first += 1
+                break
+
+        # Search forward until we find a quote or line start
+        last = col
+
+        for last in range(last, len(line)):
+            print line[last]
+            if self.QUOTE_RE.match(line[last]):
+                break
+
+        if last - first == 0:
+            return
+
+        directory = os.path.dirname(os.path.abspath(self.view.file_name()))
+        path = os.path.join(directory, line[first:last])
+
+        if os.path.isfile(path):
+            self.view.window().open_file(path)

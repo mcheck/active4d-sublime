@@ -1,5 +1,5 @@
 <snippet>
-	<description>string ..</description>
+	<description>fusedoc: string ..</description>
 	<content><![CDATA[<string name="${1:name}" $2/>]]></content>
 	<tabTrigger>st</tabTrigger>
 	<scope>source.active4d text.xml</scope>

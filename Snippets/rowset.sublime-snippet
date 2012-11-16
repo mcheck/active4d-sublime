@@ -1,5 +1,5 @@
 <snippet>
-	<description>RowSet ..</description>
+	<description>fusedoc: RowSet ..</description>
 	<content><![CDATA[<RowSet name="\$${1:query}">
 	$0
 </RowSet>]]></content>

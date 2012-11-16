@@ -1,5 +1,5 @@
 <snippet>
-	<description>string from attributes</description>
+	<description>fusedoc: string from attributes</description>
 	<content><![CDATA[<string name="${1:name}" scope="attributes" $2/>]]></content>
 	<tabTrigger>sat</tabTrigger>
 	<scope>source.active4d text.xml</scope>
